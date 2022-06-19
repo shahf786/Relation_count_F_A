@@ -45,7 +45,8 @@ body{
 @media screen and (max-width: 600px){
     body{
         /* background-image: url(https://cdn5.vectorstock.com/i/thumb-large/48/64/love-moon-vector-19374864.jpg); */
-        background-image: url(https://cdn3.vectorstock.com/i/thumb-large/25/37/silhouettes-of-young-woman-and-man-on-the-moon-vector-17192537.jpg);
+        /* background-image: url(https://cdn3.vectorstock.com/i/thumb-large/25/37/silhouettes-of-young-woman-and-man-on-the-moon-vector-17192537.jpg); */
+        background-image: url('components/back_r.jpg');
         background-attachment: fixed;
         background-position: -100px;
     }
