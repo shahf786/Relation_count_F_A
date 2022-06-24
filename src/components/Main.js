@@ -13,7 +13,16 @@ function Main() {
    let currentDate = new Date();
 
    //1.
-   let Remainindays = Math.abs(currentDate.getDate()-FutureDate.getDate());
+   
+   let Remainindays = Math.abs(FutureDate.getDate()-currentDate.getDate());
+   if(currentDate.getDate() > FutureDate.getDate())
+   {
+      FutureDate.setMonth(currentDate.getMonth()+1);
+      Remainindays = FutureDate.getTime() - currentDate.getTime();
+      Remainindays = Math.abs(Remainindays);
+      Remainindays =  Math.ceil( Remainindays / (1000 * 3600 * 24));
+   }
+  
  
    //2.
    let Relation_up_now_sec = RelationDate.getTime() - currentDate.getTime();
