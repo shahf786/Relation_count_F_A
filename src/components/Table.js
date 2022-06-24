@@ -40,7 +40,7 @@ function Table() {
                     if(runningDate.getMonth() === currentDate.getMonth())
                     {
                         months_date.pop();
-                        if(currentDate.getDate() === RelationDate.getDate()){
+                        if(currentDate.getDate() >= RelationDate.getDate()){
                             months_date.push(currentDate.toDateString());
                         }
                     }
